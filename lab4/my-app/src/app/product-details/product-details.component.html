@@ -1,0 +1,27 @@
+<h1><strong>Product Details</strong></h1>
+
+<div *ngIf="product">
+  
+  <a href={{product.link}}><h3>{{product.name}}</h3></a>
+  
+  <!-- <ng-image-slider #nav
+    [images]="imgCollection" 
+    [infinite]="true">
+  </ng-image-slider> -->
+
+  <!-- <ng-image-slider #nav
+    [images]="product.link" 
+    [infinite]="true">
+  </ng-image-slider> -->
+
+  <img src={{product.pic}} width="250" height="250">
+  
+  <h4>Price: {{ product.price }}₸</h4>
+  
+  <h2>Description: {{ product.description }}</h2>
+  
+  <h2>Rating: &#9733;{{ product.rating }}</h2>
+  
+  <button type="button" (click)="addToCart(product)">Buy</button>
+
+</div>
