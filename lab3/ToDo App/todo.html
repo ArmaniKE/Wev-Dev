@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .title1{
+            margin: -8px;
+            border: 1px solid black;
+            width: 99,5%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: rgb(173, 173, 173);
+        }
+        .title2{
+            position: absolute;
+            margin-left: 510px;
+            margin-top: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+        }
+        .task{
+            margin-left: 600px;
+            margin-top: 200px;
+        }
+        .tsk{
+            width: 800px;
+            height: 44px;
+            border-radius: 6px;
+            padding-left: 15px;
+            margin-bottom: 60px;
+            font-size: larger;
+        }
+        .add{
+            margin-left: 40px;
+            width: 69px;
+            height: 51px;
+            border-radius: 6px;
+            background-color: rgb(0,0,0);
+            color: white;
+            cursor: pointer;
+            padding-top: 3px;
+        }
+        .item2{
+            align-items: center;
+            display: flex;
+            margin-left: 510px;
+            border: 1px solid black;
+            width: 1100px;
+            border-radius: 6px;
+            height: 90px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+        }
+        .click{
+            margin-right: 40px;
+            padding-left: 20px;
+            cursor: pointer;
+        }
+        .trash{
+            margin-left: auto;
+            padding-right: 40px;
+            cursor: pointer;
+        }
+        .item2.completed{
+            text-decoration: line-through;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="main">
+        <div class="title1"><p>&emsp;&emsp;&emsp;ToDo List</p></div>
+        <div class="title2"><p>ToDo List</p></div>
+        <div class="todo">
+            <div class="task">
+                <input type="text" placeholder="New Task" class="tsk">
+                <button class="add">Add</button>
+            </div>
+            <div class="task2">
+                <div class="item">
+                    <!-- <div class="item2">
+                        <div class="click"><i class="fa-duotone fa-square-check"></i></div>
+                        <p>Hello World</p>
+                        <div class="trash"><i class="fa-solid fa-trash-can"></i></div>        
+                    </div> -->
+                </div>      
+            </div>         
+        </div>
+ 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
