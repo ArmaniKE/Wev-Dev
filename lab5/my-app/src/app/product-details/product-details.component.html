@@ -1,0 +1,25 @@
+<h1><strong>Product Details</strong></h1>
+
+<div *ngIf="product">
+
+  <a href={{product.link}}>
+    <h3>{{product.name}}</h3>
+  </a>
+
+  <img src={{product.pic}} height="250">
+
+  <h4>Price: {{ product.price }}₸</h4>
+
+  <h2>Description: {{ product.description }}</h2>
+
+  <h2>Rating: &#9733; {{ product.rating }}</h2>
+
+  <h2>Like: &#9829; {{product.like}}</h2>
+
+  <div class="like">
+    <button type="button" (click)="addLike(product)">Like</button>
+  </div>
+
+  <button type="button" (click)="addToCart(product)">Buy</button>
+
+</div>
