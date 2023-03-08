@@ -1,0 +1,8 @@
+<div *ngIf="loaded">
+    <h2>Album detail #{{album.id}}</h2>
+    <h4>{{album.title}}</h4>
+    <a href="/albums/{{album.id}}/photos">photos</a><br><br>
+    <button><a href="/home">Return back</a></button>
+    <!-- <a routerLink="/albums/1/photos" routerLinkActive="active" ariaCurrentWhenActive="page">Photos</a> -->
+</div>
+<h3 *ngIf="!loaded">album-ditail is not loaded(I wrote it in code)</h3>
