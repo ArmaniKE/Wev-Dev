@@ -3,20 +3,29 @@
 <div *ngFor="let product of products">
 
     <h3>
-        <a [title]="product.name + ' details'" 
-           [routerLink]="['/products', product.id]">
-            {{ product.name }}
-        </a>
+        <!-- <a [title]="product.name + ' details'" 
+           [routerLink]="['/products', product.id]"> -->
+           <!-- interpolation -->
+            {{ product.name }}      
+        <!-- </a> -->
     </h3>
 
-    <h4><a href={{product.link}}><img src={{product.pic}} width="250" height="250"> </a></h4>
+    <h4><a href={{product.link}}><img src={{product.pic}} height="250"> </a></h4>
     
+    <h4>Price: {{ product.price }}₸</h4>
+  
+    <h2>Description: {{ product.description }}</h2>
+    
+    <h2>Rating: &#9733;{{ product.rating }}</h2>
+    
+    <!-- <button type="button" (click)="addToCart(product)">Buy</button> -->
+
     <a href="https://t.me/share/url?url={{product.link}}">
         <button type="button" (click)="share()">Share</button>
     </a>
 
-    <app-product-alerts [product]="product" (notify)="onNotify()">
-    </app-product-alerts>
+    <!-- <app-product-alerts [product]="product" (notify)="onNotify()">
+    </app-product-alerts> -->
 
     <!-- <h4>Price: {{ product.price | currency }}</h4> -->
     

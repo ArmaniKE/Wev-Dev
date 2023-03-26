@@ -6,10 +6,6 @@ export interface Product {
     price: number;
     description: string;
     rating: string;
-    // list: string[];
-    // pic2: string;
-    // pic3: string;
-    // pic4: string;
   }
   
   export const products = [
@@ -21,12 +17,6 @@ export interface Product {
       price: 383700,
       description: 'A large phone with one of the best cameras',
       rating: '4.8/5',
-      // pic2: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h49/hc0/46392662523934/apple-iphone-13-128gb-cernyj-102298404-1-Container.jpg',
-      // pic3: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h27/h7e/46392662720542/apple-iphone-13-128gb-cernyj-102298404-2-Container.jpg',
-      // pic4: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h6f/h37/46392664031262/apple-iphone-13-128gb-cernyj-102298404-4-Container.jpg'
-      // list:['https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h49/hc0/46392662523934/apple-iphone-13-128gb-cernyj-102298404-1-Container.jpg',
-      //       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h27/h7e/46392662720542/apple-iphone-13-128gb-cernyj-102298404-2-Container.jpg',
-      //       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h6f/h37/46392664031262/apple-iphone-13-128gb-cernyj-102298404-4-Container.jpg']
     },
     {
       id: 2,

@@ -11,6 +11,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css']
 })
+
+
 export class ProductDetailsComponent {
   product: Product | undefined;
   constructor(
@@ -59,6 +61,24 @@ export class ProductDetailsComponent {
   //   {
   //     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h6f/h37/46392664031262/apple-iphone-13-128gb-cernyj-102298404-4-Container.jpg',
   //     thumbImage: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h6f/h37/46392664031262/apple-iphone-13-128gb-cernyj-102298404-4-Container.jpg',
+  //   }
+  // ];
+
+  // imgCollection: Array<object> = [    
+  //   {
+  //     image: 'product.pic2',
+  //     thumbImage: 'product.pic2',
+  //     title: 'Hummingbirds are amazing creatures'
+  //   }, 
+  //   {
+  //     image: 'product.pic3',
+  //     thumbImage: 'product.pic3',
+  //     title: 'Hummingbirds are amazing creatures'
+  //   }, 
+  //   {
+  //     image: 'product.pic4',
+  //     thumbImage: 'product.pic4',
+  //     title: 'Hummingbirds are amazing creatures'
   //   }
   // ];
 

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { products } from '../products';
 
 @Component({
@@ -7,6 +6,7 @@ import { products } from '../products';
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
+
 export class ProductListComponent {
   products = products;
 
