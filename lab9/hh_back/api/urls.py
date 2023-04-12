@@ -1,0 +1,12 @@
+from django.urls import path
+from api.views import CompanyListAPIView, CompanyDetailAPIView, VacancyListAPIView, VacancyDetailAPIView, TopTenVacanciesAPIView
+
+urlpatterns = [
+    path('companies/', CompanyListAPIView.as_view(), name='company-list'),
+    path('companies/<int:id>/', CompanyDetailAPIView.as_view(), name='company-detail'),
+    path('companies/<int:id>/vacancies/', CompanyVacanciesListAPIView.as_view(), name='company-vacancies'),
+    
+    path('vacancies/', VacancyListAPIView.as_view(), name='vacancy-list'),
+    path('vacancies/<int:id>/', VacancyDetailAPIView.as_view(), name='vacancy-detail'),
+    path('vacancies/top_ten/', TopTenVacanciesAPIView.as_view(), name='vacancy-top-ten'),
+]
